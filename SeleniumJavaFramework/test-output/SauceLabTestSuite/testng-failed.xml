@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [SauceLabTestSuite]">
+  <test thread-count="5" name="WIN10-FF-TEST1(failed)">
+    <parameter name="browser" value="Firefox"/>
+    <parameter name="version" value="66.0"/>
+    <parameter name="platform" value="windows 10"/>
+    <classes>
+      <class name="demo.TestCase1">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="verfifyLogin"/>
+        </methods>
+      </class> <!-- demo.TestCase1 -->
+    </classes>
+  </test> <!-- WIN10-FF-TEST1(failed) -->
+  <test thread-count="5" name="WIN10-CH-TEST2(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <parameter name="version" value="73.0"/>
+    <parameter name="platform" value="windows 10"/>
+    <classes>
+      <class name="demo.TestCase1">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="verfifyLogin"/>
+        </methods>
+      </class> <!-- demo.TestCase1 -->
+    </classes>
+  </test> <!-- WIN10-CH-TEST2(failed) -->
+</suite> <!-- Failed suite [SauceLabTestSuite] -->
